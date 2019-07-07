@@ -24,4 +24,10 @@ public class Person {
     public void setAdress(String adress) {
         this.adress = adress;
     }
+
+    @Override
+    public String toString() {
+        return "Власник: " + namePerson +
+                " проживає за адресою " + adress+'\n';
+    }
 }

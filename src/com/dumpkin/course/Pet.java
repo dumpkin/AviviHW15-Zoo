@@ -1,8 +1,8 @@
 package com.dumpkin.course;
 
 public class Pet {
-  private   String name;
-   private String breed;
+    private String name;
+    private String breed;
 
     public Pet(String name, String breed) {
         this.name = name;
@@ -23,5 +23,10 @@ public class Pet {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    @Override
+    public String toString() {
+        return "Тварина: " + breed +  " кличка " + name + ' ';
     }
 }
