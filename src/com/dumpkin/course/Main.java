@@ -16,29 +16,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("ЗООКЛУБ\n\n");
 
-        ArrayList<Pet> pets=new ArrayList<>();
-        pets.add(new Pet("Бобік","собака"));
-        pets.add(new Pet("Кєша","папуга"));
-        Person person=new Person("Іван Петренко","вул.Шевчкенка,15");
-
-        ZooClub club=new ZooClub(person,pets);
-
-        pets.clear();
-        person.setNamePerson("Сергій Вернигора");
-        person.setAdress("вул.Центральна,43");
-        pets.add(new Pet("Пегас","кінь"));
-        pets.add(new Pet("Анфіса","криса"));
-        club.addToAccount(person,pets);
-
-        pets.clear();
-        person.setNamePerson("Свирид Опанасович");
-        person.setAdress("Будинок із бичачим пузирем");
-        pets.add(new Pet("Шарік","песик"));
-        pets.add(new Pet("Мурзік","Котик"));
-        club.addToAccount(person,pets);
-
-        System.out.println( club.viewAccouts());
-
+   Starter.launch();
 
     }
 }
